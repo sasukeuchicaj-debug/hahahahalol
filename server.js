@@ -4,8 +4,6 @@ const path = require("path");
 const app = express();
 
 app.get("/", (req, res) => {
-  const filePath = path.join(__dirname, "file.hta");
-  res.download(filePath);
 });
 
 app.get("/check", (req, res) => {
